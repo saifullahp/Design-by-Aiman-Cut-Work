@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Design By Aiman</h1>
+  
+    <button><a href="index.html" >Cut work</a></button>
+    <input type="text" id="searchbar" placeholder="search">
+</header>
+        <section>
+
+<div class="card-container">
+
+   <div class="card">
+<img src="cw1.jpg" >
+<p>Cut work1</p>
+<button><a href="cw1.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw2.jpg" >
+<p>Cut work2</p>
+<button><a href="cw2.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw3.jpg" >
+<p>Cut work3</p>
+<button><a href="cw3.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw4.jpg" >
+<p>Cut work4</p>
+<button><a href="cw4.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw5.jpg" >
+<p>Cut work5</p>
+<button><a href="cw5.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw6.jpg" >
+<p>Cut work6</p>
+<button><a href="cw6.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw7.jpg" >
+<p>Cut work7</p>
+<button><a href="cw7.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw8.jpg" >
+<p>Cut work8</p>
+<button><a href="cw8.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw9.jpg" >
+<p>Cut work9</p>
+<button><a href="cw9.jpg">See Full Image</a></button>
+</div>
+<div class="card">
+<img src="cw10.jpg" >
+<p>Cut work10</p>
+<button><a href="cw10.jpg">See Full Image</a></button>
+</div>
+</div>
+</section>
+<script src="jquery.js"></script>
+<script>
+$("#searchbar").keyup(function(){
+var searchtext = $(this).val().toLowerCase();//am
+$(".card").filter(function(){
+var cardtext = $(this).text().toLowerCase();
+if 
+(cardtext.indexOf(searchtext)>-1){
+$(this).show()
+}
+else
+$(this).hide()
+})
+})
+</script>
+</body>
+</html>
